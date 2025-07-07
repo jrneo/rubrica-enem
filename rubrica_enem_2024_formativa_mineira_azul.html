@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Rubrica Formativa ENEM 2024 – Versão Jeitim Mineiro</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 40px;
+            color: #0d47a1;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            color: #0d47a1;
+            margin-bottom: 40px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 16px;
+            text-align: center;
+        }
+        th {
+            background-color: #1565c0;
+            color: white;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #e3f2fd;
+        }
+        td.descritor:hover {
+            background-color: #bbdefb;
+            cursor: pointer;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            padding: 30px;
+            max-width: 600px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        .overlay p {
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
+        .overlay button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0d47a1;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .overlay button:hover {
+            background-color: #002171;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Rubrica Formativa – Redação do Enem 2024 (Jeitim Mineiro)</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Competência / Nível</th>
+      <th>200</th>
+      <th>160</th>
+      <th>120</th>
+      <th>80</th>
+      <th>40</th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- COMPETÊNCIA I -->
+    <tr>
+      <th>Competência 1: Demonstrar domínio da modalidade escrita formal da língua portuguesa.</th>
+      <td class="descritor" onclick="showOverlay(`Uai, trem bão demais da conta! Seu texto tá lisim, sem erro quase nenhum. Mostrou que manda bem no português, sô! É só continuar estudando e escrevendo com atenção.`)">Demonstra excelente domínio, com eventuais desvios como exceção, sem reincidência.</td>
+      <td class="descritor" onclick="showOverlay(`Ó, tá indo bem! Só teve uns errim aqui e ali, mas nada que atrapalhe a leitura. Dá uma revisada com carinho que a nota sobe facim.`)">Demonstra bom domínio, com poucos desvios gramaticais e de convenções da escrita.</td>
+      <td class="descritor" onclick="showOverlay(`Cê tá quase lá! O texto tem sentido, mas ainda tem uns tropeços no caminho. Erros de gramática e pontuação que dá pra ajeitar com treino.`)">Demonstra domínio mediano, com alguns desvios gramaticais e de convenções da escrita.</td>
+      <td class="descritor" onclick="showOverlay(`Ih, sô... tem muito erro no seu texto. Tá difícil de entender em algumas partes. É bom dar uma passada nos fundamentos da língua e praticar mais.`)">Demonstra domínio insuficiente, com muitos desvios gramaticais, de registro e convenções da escrita.</td>
+      <td class="descritor" onclick="showOverlay(`Eita, agora complicou! O texto tá cheio de erro, parece que tá tudo embolado. Precisa voltar pro básico e ir ajeitando com paciência.`)">Demonstra domínio precário da modalidade escrita formal, com frequentes e diversificados desvios.</td>
+      <td class="descritor" onclick="showOverlay(`Ô tristeza... não deu pra ver domínio nenhum do português formal. Tenta começar devagar, estudando e praticando bastante. Cada passo conta.`)">Demonstra desconhecimento da modalidade escrita formal da língua portuguesa.</td>
+    </tr>
+
+    <!-- COMPETÊNCIA II -->
+    <tr>
+      <th>Competência 2: Compreender a proposta de redação e aplicar conceitos das várias áreas de conhecimento para desenvolver o tema dentro dos limites estruturais do texto dissertativo-argumentativo em prosa.</th>
+      <td class="descritor" onclick="showOverlay(`Ô trem bem feito, sô! Cê entendeu direitim o tema e trouxe argumento bom, com exemplo e tudo. Mostrou que sabe pensar com cabeça própria. Continua nessa batida!`)">Desenvolve o tema por meio de argumentação consistente, a partir de um repertório sociocultural produtivo, e apresenta excelente domínio do texto dissertativo-argumentativo.</td>
+      <td class="descritor" onclick="showOverlay(`Tá no caminho certo! Os argumentos tão lá, bem encaixadinhos, mas dava pra aprofundar um cadin mais em alguns pedaços. Só dar mais uma caprichada que vira 200 fácil!`)">Desenvolve o tema por meio de argumentação consistente e apresenta bom domínio do texto dissertativo-argumentativo, com proposição, argumentação e conclusão.</td>
+      <td class="descritor" onclick="showOverlay(`Ocê entendeu o tema, mas ficou no feijão com arroz. Os argumentos são previsíveis, faltou aquele tempero pra mostrar seu ponto de vista com mais força.`)">Desenvolve o tema por meio de argumentação previsível e apresenta domínio mediano do texto dissertativo-argumentativo, com proposição, argumentação e conclusão.</td>
+      <td class="descritor" onclick="showOverlay(`Uai... copiou os textos motivadores ou misturou ideia demais sem firmeza. Tente pensar direitinho no que quer dizer antes de pôr no papel.`)">Desenvolve o tema recorrendo à cópia de trechos dos textos motivadores ou apresenta domínio insuficiente do texto dissertativo-argumentativo.</td>
+      <td class="descritor" onclick="showOverlay(`Ih, tangenciou o tema ou escreveu de um jeito que não encaixa com o que a proposta pedia. É bom ler com atenção e pensar no formato certim do texto.`)">Apresenta o assunto tangenciando o tema, ou demonstra domínio precário do texto dissertativo-argumentativo, com traços constantes de outros tipos textuais.</td>
+      <td class="descritor" onclick="showOverlay(`Uai, não teve jeito... o texto fugiu do tema ou nem seguiu o modelo dissertativo. Recomeça com calma, lendo a proposta direitinho e planejando o que vai escrever.`)">Fuga ao tema ou ao formato dissertativo-argumentativo. Nestes casos, a redação recebe nota zero e é anulada.</td>
+    </tr>
+
+    <!-- COMPETÊNCIA III -->
+    <tr>
+      <th>Competência 3: Selecionar, relacionar, organizar e interpretar informações, fatos, opiniões e argumentos em defesa de um ponto de vista.</th>
+      <td class="descritor" onclick="showOverlay(`Ê trem bão! Cê juntou os argumentos direitim, com lógica e jeito próprio. Mostrou que sabe o que tá falando e organizou tudo certim.`)">Apresenta informações, fatos e opiniões relacionados ao tema proposto, de forma consistente e organizada, configurando autoria, em defesa de um ponto de vista.</td>
+      <td class="descritor" onclick="showOverlay(`Tá tudo bem encaixado, só precisava caprichar mais em umas partes. Mostrou que tem pensamento próprio, só falta dar aquela reforçada!`)">Apresenta informações, fatos e opiniões relacionados ao tema, de forma organizada, com indícios de autoria, em defesa de um ponto de vista.</td>
+      <td class="descritor" onclick="showOverlay(`Cê tá no rumo, mas se apoiou demais nos textos da prova. Tenta pensar mais com sua cabeça e ligar melhor os argumentos.`)">Apresenta informações, fatos e opiniões relacionados ao tema, limitados aos argumentos dos textos motivadores e pouco organizados, em defesa de um ponto de vista.</td>
+      <td class="descritor" onclick="showOverlay(`Opa, ficou meio bagunçado. Argumento tem, mas tá sem firmeza. Dá uma planejada melhor nos parágrafo que melhora que é uma beleza.`)">Apresenta informações, fatos e opiniões relacionados ao tema, mas desorganizadas ou contraditórias e limitadas aos argumentos dos textos motivadores, em defesa de um ponto de vista.</td>
+      <td class="descritor" onclick="showOverlay(`Tá confuso, sô... os argumentos tão sem pé nem cabeça. Precisa pensar melhor no que quer defender.`)">Apresenta informações, fatos e opiniões pouco relacionados ao tema ou incoerentes e sem defesa de um ponto de vista.</td>
+      <td class="descritor" onclick="showOverlay(`Nem argumento apareceu, uai! Tente pensar no tema e dizer o que cê pensa de verdade, com exemplos e opinião sua.`)">Apresenta informações, fatos e opiniões não relacionados ao tema e sem defesa de um ponto de vista.</td>
+    </tr>
+
+    <!-- COMPETÊNCIA IV -->
+    <tr>
+      <th>Competência 4: Demonstrar conhecimento dos mecanismos linguísticos necessários para a construção da argumentação.</th>
+      <td class="descritor" onclick="showOverlay(`Uai, seu texto flui que é uma beleza! As ideias tão bem ligadinhas, com conectivos variados. Tá bão demais, continua assim!`)">Articula bem as partes do texto e apresenta repertório diversificado de recursos coesivos.</td>
+      <td class="descritor" onclick="showOverlay(`Cê usou bem os conectivos, só que repetiu uns aqui e ali. Com mais treino dá pra deixar o texto mais leve ainda. Tá indo bem, sô!`)">Articula as partes do texto, com poucas inadequações, e apresenta repertório diversificado de recursos coesivos.</td>
+      <td class="descritor" onclick="showOverlay(`Tá dando pra entender, mas os conectivos ficaram meio repetidos ou faltando. Tenta variar mais pra deixar a leitura mais redondinha.`)">Articula as partes do texto, de forma mediana, com inadequações, e apresenta repertório pouco diversificado de recursos coesivos.</td>
+      <td class="descritor" onclick="showOverlay(`Ô trem travado! Os parágrafos tão meio soltos, sem ligação. Revê os conectores e tenta costurar melhor as ideias.`)">Articula as partes do texto, de forma insuficiente, com muitas inadequações, e apresenta repertório limitado de recursos coesivos.</td>
+      <td class="descritor" onclick="showOverlay(`Tá tudo embolado, sô... as ideias não tão se encontrando. Começa com frases simples e aprende a ligar um pensamento no outro.`)">Articula as partes do texto de forma precária.</td>
+      <td class="descritor" onclick="showOverlay(`Faltou tudo, uai. Sem ligação nenhuma entre as frases. Precisa começar do comecinho mesmo, estudando como montar um texto com sentido.`)">Não articula as informações.</td>
+    </tr>
+
+    <!-- COMPETÊNCIA V -->
+    <tr>
+      <th>Competência 5: Elaborar proposta de intervenção para o problema abordado, respeitando os direitos humanos</th>
+      <td class="descritor" onclick="showOverlay(`Cê fechou com chave de ouro, uai! Sua proposta tá completinha, bem pensada, com quem vai agir, o que fazer e respeitando todo mundo. Nota alta vem que vem!`)">Elabora muito bem proposta de intervenção, detalhada, relacionada ao tema e articulada à discussão desenvolvida no texto.</td>
+      <td class="descritor" onclick="showOverlay(`Tá bão demais! A proposta faz sentido e tá ligada ao que cê escreveu. Só faltou dar um tico mais de detalhe em algum ponto.`)">Elabora bem proposta de intervenção relacionada ao tema e articulada à discussão desenvolvida no texto.</td>
+      <td class="descritor" onclick="showOverlay(`Tem proposta sim, mas ficou meio vaga. Tenta dizer melhor quem vai fazer o quê e como, pra deixar mais redondinha.`)">Elabora, de forma mediana, proposta de intervenção relacionada ao tema e articulada à discussão desenvolvida no texto.</td>
+      <td class="descritor" onclick="showOverlay(`A proposta tá meio solta, sem ligação com o texto. Releia seus argumentos e tenta pensar numa solução que combine com eles.`)">Elabora, de forma insuficiente, proposta de intervenção relacionada ao tema, ou não articulada com a discussão desenvolvida no texto.</td>
+      <td class="descritor" onclick="showOverlay(`Ocê até tentou propor algo, mas ficou vago ou nem respeitou os direitos da galera. Fica de olho nisso e pensa com carinho no outro lado.`)">Apresenta proposta de intervenção vaga, precária ou relacionada apenas ao assunto.</td>
+      <td class="descritor" onclick="showOverlay(`Não teve proposta ou ela nem conversa com o tema. Esse pedaço é importante, viu? Bora pensar numa ideia que resolva de verdade o problema!`)">Não apresenta proposta de intervenção ou apresenta proposta não relacionada ao tema ou ao assunto.</td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+function showOverlay(texto) {
+    const overlay = document.createElement("div");
+    overlay.className = "overlay";
+    overlay.innerHTML = `<p>${texto}</p><button onclick="this.parentElement.remove()">Fechar</button>`;
+    document.body.appendChild(overlay);
+    overlay.style.display = 'block';
+}
+</script>
+</body>
+</html>

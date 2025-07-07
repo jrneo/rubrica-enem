@@ -2,111 +2,72 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Rubrica Formativa ENEM 2024</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f1f3f6;
-            margin: 0;
-            padding: 40px;
-            color: #333;
-        }
-        h1 {
-            text-align: center;
-            font-size: 2em;
-            color: #1a237e;
-            margin-bottom: 40px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: white;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 16px;
-            text-align: center;
-        }
-        th {
-            background-color: #3f51b5;
-            color: white;
-            font-weight: 600;
-        }
-        tr:nth-child(even) {
-            background-color: #fafafa;
-        }
-        td.descritor:hover {
-            background-color: #e8eaf6;
-            cursor: pointer;
-        }
-
-        .overlay {
-            display: none;
-            position: fixed;
-            top: 20%;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: white;
-            padding: 30px;
-            max-width: 600px;
-            border-radius: 12px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-            z-index: 1000;
-        }
-        .overlay p {
-            font-size: 1.2em;
-        }
-        .overlay button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #3f51b5;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-        }
-        .overlay button:hover {
-            background-color: #303f9f;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rubrica Formativa ENEM 2024</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfdfd;
+      margin: 0;
+      padding: 40px 20px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #1a237e;
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+    p {
+      max-width: 700px;
+      margin: 0 auto 40px auto;
+      text-align: center;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .link-btn {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      padding: 14px 24px;
+      font-size: 1.1em;
+      background-color: #1a237e;
+      color: white;
+      border-radius: 8px;
+      text-align: left;
+      transition: background-color 0.3s ease;
+    }
+    .link-btn:hover {
+      background-color: #0d47a1;
+    }
+    .link-btn::before {
+      content: '→ ';
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
-<h1>Rubrica Formativa – Redação do Enem 2024</h1>
-<table>
-    <thead>
-        <tr>
-            <th>Competência \ Nível</th>
-            <th>200</th>
-            <th>160</th>
-            <th>120</th>
-            <th>80</th>
-            <th>40</th>
-            <th>0</th>
-        </tr>
-    </thead>
-    <tbody>
-<tr><th>Competência 1 – Dominar a norma padrão da língua portuguesa na escrita.</th><td class="descritor" onclick="showOverlay(`Mandou benzão! Teu texto tá redondinho, sem erro, daquele jeito que dá gosto de ler. Continua nessa pegada, cê tá voando!`)">Demonstra excelente domínio da norma culta.</td><td class="descritor" onclick="showOverlay(`Quase 100%! Só rolou uns errinhos aqui e ali, tipo escorregada leve. Fica de olho em pontuação e acento que cê brilha.`)">Demonstra bom domínio da norma culta, com poucos desvios gramaticais leves.</td><td class="descritor" onclick="showOverlay(`Cê tá no corre certo, mas ainda dá uns vacilos. A ideia tá ali, mas tem uns errinhos que atrapalham. Dá uma revisada com calma e bora treinar mais que cê sobe fácil!`)">Domínio mediano, com desvios que não comprometem o sentido.</td><td class="descritor" onclick="showOverlay(`Atenção, hein! Tem erro demais e isso atrapalha entender o que cê quis dizer. Reforça a base do português, treina mais que dá pra melhorar!`)">Domínio insuficiente, com muitos desvios que dificultam a leitura.</td><td class="descritor" onclick="showOverlay(`Complicou... Erro atrás de erro deixou o texto embolado. Hora de parar, respirar e voltar pro básico. Praticar é o caminho!`)">Domínio precário, com muitos erros graves.</td><td class="descritor" onclick="showOverlay(`Vacilou feio. Sem texto ou fora do que pediram, não tem como avaliar. Não deixa a folha em branco e escreve do jeitinho que a prova pede!`)">Texto em língua estrangeira, ilegível ou não escrito.</td></tr><tr><th>Competência 2 – Compreender a proposta de redação e aplicar conceitos de várias áreas do conhecimento para desenvolver o tema.</th><td class="descritor" onclick="showOverlay(`Que aula, hein! Cê entendeu o tema de primeira e mandou um texto cheio de argumento firme, bem conectado. Tá top demais, segue nesse ritmo!`)">Desenvolve o tema de forma consistente, com excelente articulação e repertório.</td><td class="descritor" onclick="showOverlay(`Muito bom! O texto tá bem construído e tem conteúdo massa. Só faltou dar uma caprichada extra em alguns pontos pra ficar redondinho.`)">Desenvolve o tema com boa articulação e repertório pertinente.</td><td class="descritor" onclick="showOverlay(`Cê pegou a ideia, mas faltou tempero. Os argumentos ficaram meio rasos ou repetidos. Tenta trazer mais exemplo, mais visão, mais impacto.`)">Desenvolve o tema com domínio mediano e repertório limitado.</td><td class="descritor" onclick="showOverlay(`Meio perdido... Faltou firmeza na ideia e os argumentos ficaram fracos ou bagunçados. Pensa mais antes de escrever e planeja a estrutura do texto.`)">Desenvolve o tema com domínio insuficiente e articulação precária.</td><td class="descritor" onclick="showOverlay(`Saiu da pista. Cê meio que fugiu do assunto ou não desenvolveu direito. Lê o tema com atenção e pensa no que realmente tão pedindo.`)">Desenvolve o tema de forma tangencial ou incompleta.</td><td class="descritor" onclick="showOverlay(`Nada a ver com o rolê. O texto não tem conexão com o tema ou tá sem sentido. Precisa começar do zero, entender bem a proposta e se organizar.`)">Foge totalmente ao tema ou apresenta texto incoerente.</td></tr><tr><th>Competência 3 – Selecionar, relacionar, organizar e interpretar informações para defender um ponto de vista.</th><td class="descritor" onclick="showOverlay(`Mandou bem demais! Cê defendeu seu ponto com firmeza, organizou bem as ideias e mostrou domínio. Tá pronto pro pódio!`)">Argumentação excelente, bem estruturada e consistente.</td><td class="descritor" onclick="showOverlay(`Boa estrutura! Seus argumentos tão claros, mas dava pra conectar melhor ou aprofundar mais. Tá no caminho!`)">Argumentação consistente, com organização adequada.</td><td class="descritor" onclick="showOverlay(`Cê tentou argumentar, mas ficou meio raso. Faltou ligar melhor as ideias. Organiza os pensamentos antes de escrever, que melhora!`)">Argumentação mediana, com organização básica.</td><td class="descritor" onclick="showOverlay(`Faltou firmeza nas ideias. Ficou confuso e sem direção. Planeja melhor os parágrafos e foca na ideia principal.`)">Argumentação insuficiente, com desorganização.</td><td class="descritor" onclick="showOverlay(`Tá tudo solto. Os argumentos tão batendo cabeça. Bora treinar a estrutura: começo, meio e fim com lógica!`)">Argumentação precária, com ideias desconexas.</td><td class="descritor" onclick="showOverlay(`Não rolou argumento. Cê só jogou o tema ou escreveu sem defender nada. Bora aprender a dar sua opinião com base e exemplos!`)">Texto sem argumentação ou com cópia do tema.</td></tr><tr><th>Competência 4 – Demonstrar conhecimento dos mecanismos linguísticos para a construção da argumentação.</th><td class="descritor" onclick="showOverlay(`Texto liso que nem sabão! Cê ligou as ideias com naturalidade, usou os conectivos certinho. Show!`)">Excelente coesão, com uso adequado de recursos linguísticos.</td><td class="descritor" onclick="showOverlay(`Tá bem conectado! Só falta variar um pouco os jeitos de ligar as ideias. Bora dar uma lapidada.`)">Boa coesão, com uso adequado de recursos linguísticos.</td><td class="descritor" onclick="showOverlay(`Ficou repetitivo, mas dá pra entender. Tenta variar os conectivos e deixar a leitura mais fluida.`)">Coesão razoável, com uso limitado ou repetitivo de mecanismos linguísticos.</td><td class="descritor" onclick="showOverlay(`Tá meio travado, difícil de seguir. Faltaram conectivos ou usou errado. Bora estudar como ligar melhor os parágrafos e frases.`)">Coesão comprometida por falhas no uso de mecanismos linguísticos.</td><td class="descritor" onclick="showOverlay(`Tá embolado. As frases tão desconectadas e bagunçadas. Treina a lógica entre as ideias!`)">Grave comprometimento da coesão textual.</td><td class="descritor" onclick="showOverlay(`Ficou tudo solto. O texto parece um quebra-cabeça bagunçado. Começa com frases simples e treina conectar.`)">Texto incoerente ou com ausência de coesão.</td></tr><tr><th>Competência 5 – Elaborar proposta de intervenção com respeito aos direitos humanos.</th><td class="descritor" onclick="showOverlay(`Arrasou na solução! Cê pensou em tudo: quem faz, como faz e por quê. E ainda respeitou geral. Muito bom!`)">Proposta completa, detalhada e articulada, com respeito aos direitos humanos.</td><td class="descritor" onclick="showOverlay(`Boa ideia! Sua proposta tá legal e respeitosa. Só precisava de mais detalhe ou um agente mais claro.`)">Proposta adequada, com boa articulação e respeito aos direitos humanos.</td><td class="descritor" onclick="showOverlay(`Cê teve uma ideia, mas ficou meio vaga. Tenta responder: quem vai fazer, o que vai fazer e como. Isso ajuda muito!`)">Proposta razoável, com lacunas ou pouca articulação.</td><td class="descritor" onclick="showOverlay(`Tá muito solto. A proposta não tá colando com o tema. Precisa focar mais no problema e pensar numa solução real.`)">Proposta vaga ou pouco relacionada ao tema.</td><td class="descritor" onclick="showOverlay(`Atenção! Sua proposta tá confusa ou até desrespeitosa. Tem que pensar numa solução que ajude sem excluir ninguém.`)">Proposta incompleta, contraditória ou desrespeitosa.</td><td class="descritor" onclick="showOverlay(`Faltou total. Não teve proposta ou ela desrespeitou os direitos. Dá pra melhorar pensando com empatia e respeito.`)">Ausência de proposta ou proposta desrespeitosa.</td></tr>
-    </tbody>
-</table>
+  <h1>Rubrica Formativa – ENEM 2024</h1>
+  <p>
+    Essa rubrica foi criada pra te ajudar a entender melhor sua nota na redação do ENEM 2024. 
+    Escolha o estilo que mais combina com você e bora aprender com leveza e clareza!
+  </p>
 
-<div id="overlay" class="overlay">
-    <p id="overlayText"></p>
-    <button onclick="closeOverlay()">Fechar</button>
-</div>
-
-<script>
-    function showOverlay(text) {
-        document.getElementById("overlayText").innerText = text;
-        document.getElementById("overlay").style.display = "block";
-    }
-
-    function closeOverlay() {
-        document.getElementById("overlay").style.display = "none";
-    }
-</script>
+  <div class="links">
+    <a class="link-btn" href="rubrica_enem_2024_versao_neutra.html" target="_blank">Versão Neutra</a>
+    <a class="link-btn" href="rubrica_enem_2024_formativa_mineira_azul.html" target="_blank">Jeitim Mineiro</a>
+    <a class="link-btn" href="rubrica_enem_2024_jeito_carioca_vermelho.html" target="_blank">Jeito Carioca</a>
+  </div>
 
 </body>
 </html>

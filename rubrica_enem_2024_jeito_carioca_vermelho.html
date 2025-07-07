@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Rubrica Formativa ENEM 2024 – Versão Jeito Carioca</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff5f5;
+            margin: 0;
+            padding: 40px;
+            color: #4a0a0a;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            color: #b71c1c;
+            margin-bottom: 40px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 16px;
+            text-align: center;
+        }
+        th {
+            background-color: #d32f2f;
+            color: white;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #ffebee;
+        }
+        td.descritor:hover {
+            background-color: #ffcdd2;
+            cursor: pointer;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            padding: 30px;
+            max-width: 600px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        .overlay p {
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
+        .overlay button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #b71c1c;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .overlay button:hover {
+            background-color: #8e0000;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Rubrica Formativa – Redação do Enem 2024 (Jeito Carioca)</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Competência / Nível</th>
+      <th>200</th>
+      <th>160</th>
+      <th>120</th>
+      <th>80</th>
+      <th>40</th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- COMPETÊNCIA I -->
+    <tr>
+      <th>Competência 1: Demonstrar domínio da modalidade escrita formal da língua portuguesa.</th>
+      <td class="descritor" onclick="showOverlay(`Mandou muito bem! Teu texto tá limpo, sem erro quase nenhum. Dá pra ver que tu tá ligado nas regras. Só seguir nessa vibe que é sucesso!`)">Demonstra excelente domínio, com eventuais desvios como exceção, sem reincidência.</td>
+      <td class="descritor" onclick="showOverlay(`Tá maneiro, hein! Tem uns errinhos, mas nada que atrapalhe de verdade. Uma revisada com calma e tu chega no topo, tranquilo.`)">Demonstra bom domínio, com poucos desvios gramaticais e de convenções da escrita.</td>
+      <td class="descritor" onclick="showOverlay(`Tu tá no caminho, mas ainda rola uns vacilos de gramática e pontuação. Treina mais um pouco e fica suave.`)">Demonstra domínio mediano, com alguns desvios gramaticais e de convenções da escrita.</td>
+      <td class="descritor" onclick="showOverlay(`Tá meio enrolado, irmão. Tem bastante erro que deixa o texto difícil de entender. Melhor dar uma revisada geral nas regras.`)">Demonstra domínio insuficiente, com muitos desvios gramaticais, de registro e convenções da escrita.</td>
+      <td class="descritor" onclick="showOverlay(`Aí complicou... Tá tudo meio confuso e cheio de erro. Melhor parar, respirar e voltar pro básico, firmeza?`)">Demonstra domínio precário da modalidade escrita formal, com frequentes e diversificados desvios.</td>
+      <td class="descritor" onclick="showOverlay(`Ih, aí deu ruim! Não dá pra entender nada do texto. Começa devagar, vai praticando e confia que dá pra melhorar com o tempo. Cada passo conta.`)">Demonstra desconhecimento da modalidade escrita formal da língua portuguesa.</td>
+    </tr>
+
+    <!-- COMPETÊNCIA II -->
+    <tr>
+      <th>Competência 2: Compreender a proposta de redação e aplicar conceitos das várias áreas de conhecimento para desenvolver o tema dentro dos limites estruturais do texto dissertativo-argumentativo em prosa.</th>
+      <td class="descritor" onclick="showOverlay(`Tu entendeu tudo certinho! Trocou ideia maneira, argumentou firme, usou referência top. Segue assim que tá voando!`)">Desenvolve o tema por meio de argumentação consistente, a partir de um repertório sociocultural produtivo, e apresenta excelente domínio do texto dissertativo-argumentativo.</td>
+      <td class="descritor" onclick="showOverlay(`Teu argumento tá sólido, mas dava pra dar uma aprofundada em alguns pontos. Tá show, mas pode subir mais ainda! Só dar mais uma caprichada que vira 200 fácil!`)">Desenvolve o tema por meio de argumentação consistente e apresenta bom domínio do texto dissertativo-argumentativo, com proposição, argumentação e conclusão.</td>
+      <td class="descritor" onclick="showOverlay(`Tu sacou o tema, mas ficou só no básico, sem novidade. Dá pra botar mais tua visão, mais atitude no texto.`)">Desenvolve o tema por meio de argumentação previsível e apresenta domínio mediano do texto dissertativo-argumentativo, com proposição, argumentação e conclusão.</td>
+      <td class="descritor" onclick="showOverlay(`Copiar não dá jogo, né? Tem que mostrar tua ideia, tua opinião. Dá uma refletida antes de sair escrevendo.`)">Desenvolve o tema recorrendo à cópia de trechos dos textos motivadores ou apresenta domínio insuficiente do texto dissertativo-argumentativo.</td>
+      <td class="descritor" onclick="showOverlay(`Vacilou aí... Fugiu do assunto ou misturou com outro tipo de texto. Presta atenção no que a proposta tá pedindo.`)">Apresenta o assunto tangenciando o tema, ou demonstra domínio precário do texto dissertativo-argumentativo, com traços constantes de outros tipos textuais.</td>
+      <td class="descritor" onclick="showOverlay(`Pô, tu nem falou do tema ou usou outro estilo de texto. Tem que focar no que foi pedido e seguir a estrutura certa.`)">Fuga ao tema ou ao formato dissertativo-argumentativo. Nestes casos, a redação recebe nota zero e é anulada.</td>
+    </tr>
+
+    <!-- COMPETÊNCIA III -->
+    <tr>
+      <th>Competência 3: Selecionar, relacionar, organizar e interpretar informações, fatos, opiniões e argumentos em defesa de um ponto de vista.</th>
+      <td class="descritor" onclick="showOverlay(`Show de bola! Teus argumentos tão bem conectados e tu mostrou personalidade. Tá com presença no texto!`)">Apresenta informações, fatos e opiniões relacionados ao tema proposto, de forma consistente e organizada, configurando autoria, em defesa de um ponto de vista.</td>
+      <td class="descritor" onclick="showOverlay(`Mandou bem! Dá pra ver que é tua ideia ali, só faltou dar uma lapidada em algumas partes. Fica de olho nos detalhes.`)">Apresenta informações, fatos e opiniões relacionados ao tema, de forma organizada, com indícios de autoria, em defesa de um ponto de vista.</td>
+      <td class="descritor" onclick="showOverlay(`Tu usou muito o que já tava na prova e quase não colocou sua opinião. Se solta mais, dá teu ponto de vista.`)">Apresenta informações, fatos e opiniões relacionados ao tema, limitados aos argumentos dos textos motivadores e pouco organizados, em defesa de um ponto de vista.</td>
+      <td class="descritor" onclick="showOverlay(`Bagunçou um pouco. As ideias tão desconectadas. Tem que organizar melhor e fazer tudo fluir.`)">Apresenta informações, fatos e opiniões relacionados ao tema, mas desorganizadas ou contraditórias e limitadas aos argumentos dos textos motivadores, em defesa de um ponto de vista.</td>
+      <td class="descritor" onclick="showOverlay(`Tá confuso, parceiro. Os argumentos tão meio perdidos. Tenta pensar direitinho no que quer dizer.`)">Apresenta informações, fatos e opiniões pouco relacionados ao tema ou incoerentes e sem defesa de um ponto de vista.</td>
+      <td class="descritor" onclick="showOverlay(`Não rolou ponto de vista nem argumento. Do jeito que tá, parece que tu só foi escrevendo sem pensar no tema.
+`)">Apresenta informações, fatos e opiniões não relacionados ao tema e sem defesa de um ponto de vista.</td>
+    </tr>
+
+    <!-- COMPETÊNCIA IV -->
+    <tr>
+      <th>Competência 4: Demonstrar conhecimento dos mecanismos linguísticos necessários para a construção da argumentação.</th>
+      <td class="descritor" onclick="showOverlay(`Textão fluindo bonito! As ideias tão bem amarradas, conectores bem usados. Ficou leve de ler, daquele jeito!`)">Articula bem as partes do texto e apresenta repertório diversificado de recursos coesivos.</td>
+      <td class="descritor" onclick="showOverlay(`Tá tranquilo, tá favorável! Usou os conectivos direitinho, só que repetiu uns aí. Bora variar mais? Tá indo bem, sô!`)">Articula as partes do texto, com poucas inadequações, e apresenta repertório diversificado de recursos coesivos.</td>
+      <td class="descritor" onclick="showOverlay(`Tá indo, mas tá meio no automático. Conectivos repetidos ou faltando. Dá pra melhorar esse encaixe das ideias.`)">Articula as partes do texto, de forma mediana, com inadequações, e apresenta repertório pouco diversificado de recursos coesivos.</td>
+      <td class="descritor" onclick="showOverlay(`Ficou meio travado. As ideias tão soltas, e os conectores não tão funcionando direito. Dá pra melhorar com treino.`)">Articula as partes do texto, de forma insuficiente, com muitas inadequações, e apresenta repertório limitado de recursos coesivos.</td>
+      <td class="descritor" onclick="showOverlay(`Tá embolado demais, mano. As frases tão desconexas. Tem que estudar como ligar uma coisa na outra.`)">Articula as partes do texto de forma precária.</td>
+      <td class="descritor" onclick="showOverlay(`Ih, não rolou nenhuma ligação entre as partes. O texto ficou quebrado. Precisa começar do básico da coesão.`)">Não articula as informações.</td>
+    </tr>
+
+    <!-- COMPETÊNCIA V -->
+    <tr>
+      <th>Competência 5: Elaborar proposta de intervenção para o problema abordado, respeitando os direitos humanos</th>
+      <td class="descritor" onclick="showOverlay(`Arrebentou! Tua proposta tá redondinha, com tudo explicadinho: quem faz, o que faz, como e por quê. Ficou bolado de bom!`)">Elabora muito bem proposta de intervenção, detalhada, relacionada ao tema e articulada à discussão desenvolvida no texto.</td>
+      <td class="descritor" onclick="showOverlay(`Tá maneiro, só faltou um detalhezinho. Explica mais quem vai fazer ou como vai funcionar. Só isso e já era!`)">Elabora bem proposta de intervenção relacionada ao tema e articulada à discussão desenvolvida no texto.</td>
+      <td class="descritor" onclick="showOverlay(`Tu mandou uma ideia, mas ficou vaga. Dá mais forma pra proposta: coloca um agente, uma ação, uma meta.`)">Elabora, de forma mediana, proposta de intervenção relacionada ao tema e articulada à discussão desenvolvida no texto.</td>
+      <td class="descritor" onclick="showOverlay(`A proposta até existe, mas parece que veio de outro texto. Tem que ligar bem com teus argumentos.`)">Elabora, de forma insuficiente, proposta de intervenção relacionada ao tema, ou não articulada com a discussão desenvolvida no texto.</td>
+      <td class="descritor" onclick="showOverlay(`Tem algo aí, mas tá solto, sem direção. E ó: sempre respeita os direitos humanos, beleza?`)">Apresenta proposta de intervenção vaga, precária ou relacionada apenas ao assunto.</td>
+      <td class="descritor" onclick="showOverlay(`Faltou geral a proposta. Precisa pensar numa ideia pra resolver o problema do tema, senão perde muito ponto.`)">Não apresenta proposta de intervenção ou apresenta proposta não relacionada ao tema ou ao assunto.</td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+function showOverlay(texto) {
+    const overlay = document.createElement("div");
+    overlay.className = "overlay";
+    overlay.innerHTML = `<p>${texto}</p><button onclick="this.parentElement.remove()">Fechar</button>`;
+    document.body.appendChild(overlay);
+    overlay.style.display = 'block';
+}
+</script>
+</body>
+</html>
